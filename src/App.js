@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import Slidebar from './components/Slidebar'
+import Table from './components/Table'
+import AboutMe from './components/Aboutme'
+import React from 'react'
 
 function App() {
+  const [valueTable, setValueTable] = React.useState(false);
+  const [valueAboutMe, setAboutMe] = React.useState(false);
+
+  function handleChange(newValue) {
+    console.log(newValue);
+    if(newValue === "1"){
+
+      setValueTable(true);
+      setAboutMe(false);
+
+    }
+    if(newValue === "2"){
+      setAboutMe(true);
+      setValueTable(false);
+    }
+
+
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Slidebar value={valueTable} onChange={handleChange} />
+      {valueTable && <Table/>}
+      {valueAboutMe && <AboutMe/>}
     </div>
   );
 }

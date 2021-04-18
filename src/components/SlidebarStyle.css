@@ -1,0 +1,64 @@
+.slidebar{
+
+    height: 100%;  
+    width: 16%; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0; 
+    background-color: #1E5F74; 
+    transition: .5s ease; 
+    overflow-x: hidden; 
+    padding-top: 20px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    color: white;
+}
+
+.homeImgDiv{
+
+    margin-top : 100px;
+    cursor: pointer;
+    align-self: flex-start;
+    width:100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    padding-left: 20px;
+
+
+}
+.homeImgDiv:hover {
+    background-color:#133B5C;
+  }
+
+.homeImg{
+    align-self: flex-start;
+    margin-right: 5px;
+    margin-bottom: -5px;
+
+}
+.aboutMeImgDiv{
+
+    margin-top : 20px;
+    align-self: flex-start;
+    cursor: pointer;
+    width:100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    padding-left: 20px;
+
+
+}
+.aboutMeImgDiv:hover {
+    background-color:#133B5C;
+}
+
+.aboutMeImg{
+    align-self: flex-start;
+    margin-right: 5px;
+    margin-bottom: -5px;
+
+}
