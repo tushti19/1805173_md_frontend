@@ -1,4 +1,4 @@
-# A simple website rendering a table and perfroming add and search functionality
+# A simple website rendering a table and performing add and search functionality
 # No material-ui components only pure css
 ![Screenshot (246)](https://user-images.githubusercontent.com/63390046/115163425-ad83d900-a0c6-11eb-9440-7a7fd7c4b022.png)
 ![Screenshot (245)](https://user-images.githubusercontent.com/63390046/115163427-aeb50600-a0c6-11eb-9f21-c606f6e2195e.png)
